@@ -1,0 +1,45 @@
+body {
+    background: url(/images/1920x10802.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll
+}
+
+.jumbotron{
+    background: rgba(249, 249, 249, 0.8);
+}
+
+.smaller-img {
+    width: 200px;
+    border-radius: 50%
+}
+.container h1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 100;    
+}
+.box{
+    width: 300px;
+    background: rgba(249, 249, 249, 0.4);    
+    padding: 40px;    
+    text-align: center;
+    margin: auto;
+    margin-left: -10em;
+    margin-top: 5%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+}
+.box-img{
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.list-group-item{
+    text-align: left;
+    background-color: transparent;
+    border: 0px;    
+}
+.card{
+    text-align: left;
+    background-color: transparent;
+    border: 0px;
+}
+
+
