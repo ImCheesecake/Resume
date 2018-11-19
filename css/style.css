@@ -1,26 +1,28 @@
 body {
-    background: url(/images/1920x10802.jpg);
+    /* background: url(/images/Other/LoremIpsumMain.jpg); */
+    background: #353535;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll
+    background-attachment: scroll;
 }
 
 .jumbotron{
-    background: rgba(249, 249, 249, 0.8);
+    background: rgba(249, 249, 249, 0.2);    
+}
+.jumbotron h1, .container h1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 100;  
 }
 
 .smaller-img {
     width: 200px;
     border-radius: 50%
 }
-.container h1{
-    text-align: center;
-    font-family: 'Raleway', sans-serif; 
-    font-weight: 100;    
-}
+
 .box{
     width: 300px;
-    background: rgba(249, 249, 249, 0.4);    
+    background: rgba(249, 249, 249, 0.5);    
     padding: 40px;    
     text-align: center;
     margin: auto;
@@ -31,15 +33,8 @@ body {
 .box-img{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
-.list-group-item{
+.list-group-item, .card{
     text-align: left;
     background-color: transparent;
     border: 0px;    
 }
-.card{
-    text-align: left;
-    background-color: transparent;
-    border: 0px;
-}
-
-
