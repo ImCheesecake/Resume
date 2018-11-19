@@ -15,10 +15,10 @@ a.animated-button:link, a.animated-button:visited {
 	letter-spacing: .08em;
 	border-radius: 0;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-o-transition: all 0.75s ease;
+	transition: all 0.75s ease;
 }
 a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
@@ -28,10 +28,10 @@ a.animated-button:link:after, a.animated-button:visited:after {
 	top: 50%;
 	width: 150%;
 	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
+	-webkit-transition: all 0.55s ease 0s;
+	-moz-transition: all 0.55s ease 0s;
+	-o-transition: all 0.55s ease 0s;
+	transition: all 0.55s ease 0s;
 }
 a.animated-button:link:hover, a.animated-button:visited:hover {
 	color: #FFF;
@@ -56,10 +56,10 @@ a.animated-button:link, a.animated-button:visited {
 	overflow: hidden;
 	letter-spacing: .08em;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-o-transition: all 0.75s ease;
+	transition: all 0.75s ease;
 }
 
 /* Buttons */
@@ -76,7 +76,7 @@ a.animated-button.button-one:after {
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
 a.animated-button.button-two {
-	border: 2px solid #D24D57;
+	border: 1.5px solid #D24D57;
 	border-radius: 5px;
 }
 a.animated-button.button-two:after {
