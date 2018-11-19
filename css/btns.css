@@ -47,7 +47,7 @@ a.animated-button:link, a.animated-button:visited {
 	padding: 14px 15px;
 	color: #fff;
 	font-family: 'Roboto', sans-serif; 
-	font-size:14px;
+	font-size:15px;
 	border-radius: 0;
 	font-weight: 300;
 	text-align: center;
@@ -66,6 +66,7 @@ a.animated-button:link, a.animated-button:visited {
 
 a.animated-button.button-one {
 	border: 2px solid #D24D57;
+	border-radius: 5px;
 }
 a.animated-button.button-one:after {
 	background: #D24D57;
@@ -76,6 +77,7 @@ a.animated-button.button-one:after {
 }
 a.animated-button.button-two {
 	border: 2px solid #D24D57;
+	border-radius: 5px;
 }
 a.animated-button.button-two:after {
 	background: #D24D57;
@@ -86,6 +88,7 @@ a.animated-button.button-two:after {
 }
 a.animated-button.button-three {
 	border: 2px solid #D24D57;
+	border-radius: 5px;
 }
 a.animated-button.button-three:after {
 	background: #D24D57;
@@ -101,6 +104,7 @@ a.animated-button.button-three:hover:after {
 }
 a.animated-button.button-four {
 	border: 2px solid #D24D57;
+	border-radius: 5px;
 }
 a.animated-button.button-four:after {
 	background: #D24D57;
