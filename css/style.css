@@ -16,14 +16,14 @@ body {
 }
 
 .profile-img {
+    margin-top: -2.2em;
     width: 200px;
     border-radius: 50%;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .navbar{
-    margin-top: -3.2em;
-    border-radius: 10px;
+    margin-top: -3.2em;    
 }
 /* .box{
     width: 300px;
