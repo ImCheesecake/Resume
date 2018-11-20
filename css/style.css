@@ -1,22 +1,23 @@
 body {
     /* background: url(/images/Other/LoremIpsumMain.jpg); */
     background: #353535;
-
 }
 
 * {
     box-sizing: border-box;
 }
 
-.jumbotron{
-    background: rgba(249, 249, 249, .4);
+.jumbotron {
+    background: rgb(197, 197, 197);
     margin-top: 1%;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);   
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
 }
-.jumbotron h1, .container h1{
+
+.jumbotron h1,
+.container h1 {
     text-align: center;
-    font-family: 'Raleway', sans-serif; 
-    font-weight: 100;      
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
 
 .profile-img {
@@ -26,16 +27,10 @@ body {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
-.navbar{
-    margin-top: -3.2em;    
+.navbar {
+    margin-top: -3.2em;
 }
-/* .box{
-    width: 300px;
-    background: rgba(249, 249, 249, 0.5);    
-    padding: 40px;    
-    text-align: center;
-    margin: auto;
-    margin-left: -10em;
-    margin-top: 5%;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
-} */
+
+#cv, #contact, #letter {
+    display: none;    
+}

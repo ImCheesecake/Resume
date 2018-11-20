@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200|Roboto:100,300,400" rel="stylesheet">
@@ -32,11 +34,76 @@
         </div>
     </div>
     <nav class="navbar justify-content-center">
-        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two">CV</a> </div>
-        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two">Letter</a> </div>
-        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two">Contact</a> </div>
-
+        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two" id="btn-cv" alt="cv">Curriculum
+                Vitae</a></div>
+        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two" id="btn-letter" alt="letter">Personal
+                Letter</a> </div>
+        <div class="col-md-2"> <a href="#" class="btn btn-sm animated-button button-two" id="btn-contact" alt="contact">Contact</a>
+        </div>
     </nav>
+    <script>
+        $(".btn").click(function () {
+            var selected = "#" + $(this).attr('alt');
+            if ($(selected).is(':visible') == true) {
+                $(selected).fadeOut([300]);
+            } else {
+                if ($("div.aboutme:visible").length === 0) {
+                    $(selected).fadeIn([600]);
+
+                } else {
+                    $('.aboutme').fadeOut([300]);
+                    $(selected).delay([500]).fadeIn([600]);
+                }
+            }
+        });
+    </script>
+    <div class="container aboutme" id="cv">
+        <div class="jumbotron text-center justify-content-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem iure
+            porro corporis fuga ipsa! Animi earum, voluptas ducimus nostrum voluptatibus reiciendis, similique quae
+            assumenda doloribus error aliquid?
+            Sint ab aut facere, deleniti provident modi accusantium ad voluptate dicta, in consectetur natus saepe odio
+            velit! Molestias voluptate deleniti eius dolores voluptatum, maxime beatae. Aspernatur, nam omnis?
+            Quibusdam, praesentium!
+
+        </div>
+    </div>
+
+    <div class="container aboutme" id="letter">
+        <div class="jumbotron text-center justify-content-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem iure
+
+            Ea obcaecati laborum consectetur impedit quo veniam, similique vel quae fuga voluptatem esse accusamus,
+            nam nihil numquam adipisci, ullam animi deleniti aut. Vero voluptatibus, repellendus tempora laudantium
+            cupiditate necessitatibus culpa.
+            Excepturi aspernatur praesentium repudiandae fugiat omnis voluptatibus quo quibusdam amet. Consequuntur
+            esse vitae illum ex optio eum quas praesentium, accusamus dolor facere qui fugiat cum odio aspernatur
+            neque magni delectus.
+            Id eaque ad nesciunt odio voluptatibus quod quisquam dignissimos ex, illo soluta fugit deserunt itaque
+            animi. Tempore ab fugiat quis ipsa sunt. Recusandae quam perferendis in, sed a nam culpa!
+
+        </div>
+    </div>
+
+    <div class="container aboutme" id="contact">
+        <div class="jumbotron text-center justify-content-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem
+            iure porro corporis fuga ipsa! Animi earum, voluptas ducimus nostrum voluptatibus reiciendis,
+            similique quae assumenda doloribus error aliquid?
+            Sint ab aut facere, deleniti provident modi accusantium ad voluptate dicta, in consectetur natus
+            saepe odio velit! Molestias voluptate deleniti eius dolores voluptatum, maxime beatae. Aspernatur,
+            nam omnis? Quibusdam, praesentium!
+            Ea obcaecati laborum consectetur impedit quo veniam, similique vel quae fuga voluptatem esse
+            accusamus, nam nihil numquam adipisci, ullam animi deleniti aut. Vero voluptatibus, repellendus
+            tempora laudantium cupiditate necessitatibus culpa.
+            Excepturi aspernatur praesentium repudiandae fugiat omnis voluptatibus quo quibusdam amet.
+            Consequuntur esse vitae illum ex optio eum quas praesentium, accusamus dolor facere qui fugiat cum
+            odio aspernatur neque magni delectus.
+            Id eaque ad nesciunt odio voluptatibus quod quisquam dignissimos ex, illo soluta fugit deserunt
+            itaque animi. Tempore ab fugiat quis ipsa sunt. Recusandae quam perferendis in, sed a nam culpa!
+
+        </div>
+    </div>
 </body>
 
 </html>
