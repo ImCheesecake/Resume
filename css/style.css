@@ -1,14 +1,35 @@
 body {
-    /* background: url(/images/Other/LoremIpsumMain.jpg); */
-    background: #353535;
+    background: rgb(155, 155, 155);
+    background: -moz-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+    background: linear-gradient(to bottom, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+    min-height: 1000px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    outline: 1px solid slategrey;
 }
 
 * {
     box-sizing: border-box;
 }
 
+*:focus {
+	box-shadow: none !important;
+}
+
 .jumbotron {
-    background: rgb(197, 197, 197);
+    background: #c5c5c5;
     margin-top: 1%;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
 }
@@ -31,6 +52,81 @@ body {
     margin-top: -3.2em;
 }
 
-#cv, #contact, #letter {
-    display: none;    
+#cv,
+#contact,
+#letter {
+    display: none;
 }
+
+
+/* #region Footer */
+
+.footer {
+	background: #c5c5c5;
+    height: 50px;  
+	border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #DDDDDD;
+}
+
+.footer ul {
+	font-size: 13px;
+    list-style-type: none;    
+    color: #7F8C8D;
+    padding-top: .5%;
+    margin-left: auto;    
+
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #78828D
+}
+
+/* #endregion Footer */
+
+
+/* #region social */
+
+.social li {
+	background: none repeat scroll 0 0 #9b9b9b;
+	border: 2px solid #9b9b9b;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+	height: 36px;
+	line-height: 36px;
+    margin: 0 15px 0 0;    
+	padding: 0%;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
+
+/* #endregion social */

@@ -12,16 +12,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script src="js/snowfall.jquery.js"></script>
+
+    <script src="js/jKonamiCode.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200|Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/btns.css">
 
 
+
 </head>
 
 <body>
+    <script>
+        $(function () {
+
+            $(window).jKonamicode(function () {
+
+                $(document).ready(function () {
+                    $(document).snowfall({
+                        deviceorientation: true,
+                        round: true,
+                        minSize: 1,
+                        maxSize: 7,
+                        flakeCount: 250
+                    });                    
+                });
+            });
+        });
+    </script>
+
     <div class="container">
         <div class="jumbotron text-center justify-content-center">
             <img src="images/profile1.jpg" alt="" class="rounded-circle profile-img">
@@ -45,14 +70,20 @@
         $(".btn").click(function () {
             var selected = "#" + $(this).attr('alt');
             if ($(selected).is(':visible') == true) {
-                $(selected).fadeOut([300]);
+                $(selected).fadeOut([250]);
+                $('.btn').removeClass('selected');
+
             } else {
                 if ($("div.aboutme:visible").length === 0) {
-                    $(selected).fadeIn([600]);
+                    $(selected).fadeIn([250]);
+                    $('.btn').removeClass('selected')
+                    $(this).addClass('selected');
 
                 } else {
-                    $('.aboutme').fadeOut([300]);
-                    $(selected).delay([500]).fadeIn([600]);
+                    $('.aboutme').fadeOut([250]);
+                    $(selected).delay([400]).fadeIn([250]);
+                    $('.btn').removeClass('selected')
+                    $(this).addClass('selected');
                 }
             }
         });
@@ -104,6 +135,19 @@
 
         </div>
     </div>
+    <footer>
+        <div class="footer fixed-bottom" id="footer">
+            <div class="container">
+                <ul class="social text-center">
+                    <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                    <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                    <li> <a href="#"> <i class="fa fa-instagram">   </i> </a> </li>
+                    <li> <a href="#"> <i class="fa fa-github">   </i> </a> </li>
+                    <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
