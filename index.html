@@ -12,11 +12,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous"></script>
-    <script src="js/snowfall.jquery.js"></script>
 
+    <script src="js/snowfall.jquery.js"></script>
     <script src="js/jKonamiCode.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <script>
         $(function () {
 
@@ -41,7 +40,13 @@
                         minSize: 1,
                         maxSize: 7,
                         flakeCount: 250
-                    });                    
+                    });
+                });
+
+                $("#profile-pic").attr("src", "images/profile2.jpg");
+                $("#body").css({
+                    'background-image': 'url(images/christmas2.jpg)',
+                    'background-size': 'cover'
                 });
             });
         });
@@ -49,7 +54,7 @@
 
     <div class="container">
         <div class="jumbotron text-center justify-content-center">
-            <img src="images/profile1.jpg" alt="" class="rounded-circle profile-img">
+            <img src="images/profile1.jpg" id="profile-pic" class="rounded-circle profile-img">
 
             <h1 class="display-1">FREDDIE RUNNDING</h1>
             <hr class="my-3">
