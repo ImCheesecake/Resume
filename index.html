@@ -27,10 +27,11 @@
 
 </head>
 
-<body id="body">
+<body class="body">
+    <audio id="audio" src="music/jinglebells.mp3"></audio>
+
     <script>
         $(function () {
-
             $(window).jKonamicode(function () {
 
                 $(document).ready(function () {
@@ -42,13 +43,17 @@
                         flakeCount: 200
                     });
                 });
-
+                $('#audio')[0].play();
+                $('#audio').prop("volume", 0.2);
                 $("#profile-pic").attr("src", "images/profile2.jpg");
-                $("#body").css({
-                    'background-image': 'url(images/christmas2.jpg)',
-                    'background-size': 'cover'
-                });
+                $(".body").addClass('body-pic');
             });
+            setTimeout(function () {
+                $(document).snowfall('clear');
+                $('#audio')[0].pause();
+                $("#profile-pic").attr("src", "images/profile1.jpg");
+                $(".body").removeClass('body-pic');
+            }, 20000);
         });
     </script>
 
@@ -100,9 +105,9 @@
     <!-- /buttons -->
 
 
-    <!-- #region containers  -->
+    <!-- #region content  -->
 
-    <div class="container aboutme" id="cv">
+    <div class="container grid-container aboutme" id="cv">
         <div class="jumbotron text-center justify-content-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem iure
             porro corporis fuga ipsa! Animi earum, voluptas ducimus nostrum voluptatibus reiciendis, similique quae
@@ -114,7 +119,7 @@
         </div>
     </div>
 
-    <div class="container aboutme" id="letter">
+    <div class="container grid-container aboutme" id="letter">
         <div class="jumbotron text-center justify-content-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem iure
 
@@ -130,7 +135,7 @@
         </div>
     </div>
 
-    <div class="container aboutme" id="contact">
+    <div class="container grid-container aboutme" id="contact">
         <div class="jumbotron text-center justify-content-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus molestias exercitationem
             iure porro corporis fuga ipsa! Animi earum, voluptas ducimus nostrum voluptatibus reiciendis,
@@ -150,17 +155,22 @@
         </div>
     </div>
 
-    <!-- #endregion containers  -->
+    <!-- #endregion content  -->
 
     <footer>
         <div class="footer fixed-bottom" id="footer">
             <div class="container">
                 <ul class="social text-center">
-                    <li> <a href="https://www.facebook.com/ostkakan" target="_blank"> <i class=" fa fa-facebook"></i> </a> </li>
-                    <li> <a href="https://twitter.com/ostkakan" target="_blank"> <i class="fa fa-twitter"></i> </a> </li>
-                    <li> <a href="https://www.instagram.com/ostkakan/" target="_blank"> <i class="fa fa-instagram"></i> </a> </li>
-                    <li> <a href="https://github.com/ImCheesecake" target="_blank"> <i class="fa fa-github"></i> </a> </li>
-                    <li> <a href="https://www.youtube.com/user/Ostkakan85/" target="_blank"> <i class="fa fa-youtube"></i> </a> </li>
+                    <li> <a href="https://www.facebook.com/ostkakan" target="_blank"> <i class=" fa fa-facebook"></i>
+                        </a> </li>
+                    <li> <a href="https://twitter.com/ostkakan" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    </li>
+                    <li> <a href="https://www.instagram.com/ostkakan/" target="_blank"> <i class="fa fa-instagram"></i>
+                        </a> </li>
+                    <li> <a href="https://github.com/ImCheesecake" target="_blank"> <i class="fa fa-github"></i> </a>
+                    </li>
+                    <li> <a href="https://www.youtube.com/user/Ostkakan85/" target="_blank"> <i class="fa fa-youtube"></i>
+                        </a> </li>
                 </ul>
             </div>
         </div>

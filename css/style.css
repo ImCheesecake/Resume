@@ -8,6 +8,12 @@ body {
     min-height: 1000px;
 }
 
+.body-pic {
+	background-image: url('/images/christmas2.png');
+	background-size: cover;
+
+}
+
 body::-webkit-scrollbar {
     width: 0.7em;
 }
@@ -135,3 +141,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* #endregion social */
+
+
+/* #region flex */
+
+.grid-container{
+	display: grid;
+	justify-content: center;
+}
+
+.grid-item{
+	align-self: auto;
+}
+
+/* #endregion flex */
