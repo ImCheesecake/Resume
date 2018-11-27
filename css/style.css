@@ -1,3 +1,5 @@
+/* #region Body */
+
 body {
     background: rgb(155, 155, 155);
     background: -moz-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
@@ -27,6 +29,8 @@ body::-webkit-scrollbar-thumb {
 *:focus {
 	box-shadow: none !important;
 }
+
+/* #endregion Body */
 
 .jumbotron {
     background: #c5c5c5;
