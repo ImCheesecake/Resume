@@ -19,7 +19,8 @@ a.animated-button:visited {
 	overflow: hidden;
 	letter-spacing: .08em;
 	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	text-shadow: none;
+	/* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2); */
 	-webkit-transition: all 0.6 ease;
 	-moz-transition: all 0.6 ease;
 	-o-transition: all 0.6 ease;
@@ -38,13 +39,14 @@ a.animated-button:visited:after {
 	-webkit-transition: all 0.6s ease 0s;
 	-moz-transition: all 0.6s ease 0s;
 	-o-transition: all 0.6s ease 0s;
-	transition: all 0.6 ease 0s;
+	transition: all 0.6 ease;
 }
 
 a.animated-button:link:hover,
 a.animated-button:visited:hover {
 	color: #000;
 	text-shadow: none;
+	transition: all 0.6s ease;
 }
 
 a.animated-button:link:hover:after,
@@ -52,7 +54,7 @@ a.animated-button:visited:hover:after {
 	height: 450%;
 }
 
-/* a.animated-button:link,
+a.animated-button:link,
 a.animated-button:visited {
 	position: relative;
 	display: block;
@@ -68,20 +70,25 @@ a.animated-button:visited {
 	text-transform: uppercase;
 	overflow: hidden;
 	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	text-shadow: none;
+	/* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2); */
 	-webkit-transition: all 0.6 ease;
 	-moz-transition: all 0.6 ease;
 	-o-transition: all 0.6 ease;
 	transition: all 0.6 ease;
-} */
+}
 
 /* #endregion Button Styles */
 
 /* #region Button 2 */
 
 a.animated-button.selected {
-	/* background: rgb(218, 218, 218); */
-	background: #8eb9eb;
+	/* red */
+	background: #D24D57;
+
+	/* blue */
+	/* background: #0F75D5 */
+
 }
 
 a.animated-button.unselected {
@@ -94,13 +101,13 @@ a.animated-button.unselected {
 
 a.animated-button.button-two {
 	/* border: 1.5px solid rgb(159, 231, 76); */
-	border: 1.5px solid #8eb9eb;
+	border: 1.5px solid #D24D57;
 	border-radius: 5px;
 }
 
 a.animated-button.button-two:after {
 	/* background: rgb(159, 231, 76); */
-	background: #8eb9eb;
+	background: #D24D57;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
