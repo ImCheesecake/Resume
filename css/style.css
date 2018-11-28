@@ -203,4 +203,9 @@ body::-webkit-scrollbar-thumb {
 	font-weight: 100;
 }
 
+span.headliner p{
+	display: block;
+	margin: 0;
+}
+
 /* #endregion content */
