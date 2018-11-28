@@ -1,36 +1,40 @@
 /* #region Body */
 
 body {
-    background: rgb(155, 155, 155);
-    background: -moz-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
-    background: linear-gradient(to bottom, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
-    min-height: 1000px;
+	background: rgb(155, 155, 155);
+	background: -moz-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	background: linear-gradient(to bottom, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	min-height: 1000px;
+}
+
+.body-color {
+	background: rgb(155, 155, 155);
+	background: -moz-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	background: linear-gradient(to bottom, rgba(155, 155, 155, 1) 0%, rgba(53, 53, 53, 1) 100%);
+	min-height: 1000px;
 }
 
 .body-pic {
 	background-image: url('/images/christmas2.png');
 	background-size: cover;
-
 }
 
 body::-webkit-scrollbar {
-    width: 0.7em;
+	width: 0.7em;
 }
 
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #c5c5c5;
-    outline: 1px solid slategrey;
+	background-color: #c5c5c5;
+	outline: 1px solid slategrey;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 *:focus {
 	box-shadow: none !important;
@@ -39,34 +43,34 @@ body::-webkit-scrollbar-thumb {
 /* #endregion Body */
 
 .jumbotron {
-    background: #c5c5c5;
-    margin-top: 1%;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+	background: #c5c5c5;
+	margin-top: 1%;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
 }
 
 .jumbotron h1,
 .container h1 {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 }
 
 .profile-img {
-    margin-top: -2.2em;
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	margin-top: -2.2em;
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 
 .navbar {
-    margin-top: -3.2em;
+	margin-top: -3.2em;
 }
 
 #cv,
 #contact,
 #letter {
-    display: none;
+	display: none;
 }
 
 
@@ -74,23 +78,25 @@ body::-webkit-scrollbar-thumb {
 
 .footer {
 	background: #c5c5c5;
-    height: 50px;  
+	height: 50px;
 	border-bottom: 1px solid #CCCCCC;
-    border-top: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
 }
 
 .footer ul {
 	font-size: 13px;
-    list-style-type: none;    
-    color: #7F8C8D;
-    padding-top: .5%;
-    margin-left: auto;    
+	list-style-type: none;
+	color: #7F8C8D;
+	padding-top: .5%;
+	margin-left: auto;
 
 }
+
 .footer ul li a {
 	padding: 0 0 5px 0;
 	display: block;
 }
+
 .footer a {
 	color: #78828D
 }
@@ -107,11 +113,11 @@ body::-webkit-scrollbar-thumb {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
+	border-radius: 50%;
+	display: inline-block;
 	height: 36px;
 	line-height: 36px;
-    margin: 0 15px 0 0;    
+	margin: 0 15px 0 0;
 	padding: 0%;
 	width: 36px;
 	transition: all 0.5s ease 0s;
@@ -120,6 +126,7 @@ body::-webkit-scrollbar-thumb {
 	-ms-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 }
+
 .social li:hover {
 	transform: scale(1.15) rotate(360deg);
 	-webkit-transform: scale(1.1) rotate(360deg);
@@ -127,13 +134,16 @@ body::-webkit-scrollbar-thumb {
 	-ms-transform: scale(1.1) rotate(360deg);
 	-o-transform: scale(1.1) rotate(360deg);
 }
+
 .social li a {
 	color: #EDEFF1;
 }
+
 .social li:hover {
 	border: 2px solid #2c3e50;
 	background: #2c3e50;
 }
+
 .social li a i {
 	font-size: 16px;
 	margin: 0 0 0 5px;
@@ -143,15 +153,54 @@ body::-webkit-scrollbar-thumb {
 /* #endregion social */
 
 
-/* #region flex */
+/* #region content */
 
-.grid-container{
-	display: grid;
+.flex-container {
+	text-align: left;
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
+	align-items: stretch;	
 }
 
-.grid-item{
-	align-self: auto;
+.flex-container h2, h3 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
 
-/* #endregion flex */
+
+.flex-item {
+	flex: 0 1 auto;
+	max-width: 25%;
+	min-width: 25%;
+	padding-right: 1em;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.flex-item2 {
+	flex: 0 1 auto;
+	max-width: 69%;
+	min-width: 69%;
+	margin-top: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.flex-item3 {
+	max-width: 5%;
+	margin: 1em 0;
+	text-align: center;
+	padding: 0;
+	border-left: 1px solid rgb(0, 0, 0, 0.1);
+}
+.flex-container h1 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+/* #endregion content */
