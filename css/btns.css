@@ -9,7 +9,7 @@ a.animated-button:visited {
 	display: block;
 	margin: 30px auto 0;
 	padding: 14px 15px;
-	color: #fff;
+	color: #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 300;
@@ -43,7 +43,7 @@ a.animated-button:visited:after {
 
 a.animated-button:link:hover,
 a.animated-button:visited:hover {
-	color: #FFF;
+	color: #000;
 	text-shadow: none;
 }
 
@@ -52,13 +52,13 @@ a.animated-button:visited:hover:after {
 	height: 450%;
 }
 
-a.animated-button:link,
+/* a.animated-button:link,
 a.animated-button:visited {
 	position: relative;
 	display: block;
 	margin: 30px auto 0;
 	padding: 14px 15px;
-	color: #fff;
+	color: #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	border-radius: 0;
@@ -73,14 +73,15 @@ a.animated-button:visited {
 	-moz-transition: all 0.6 ease;
 	-o-transition: all 0.6 ease;
 	transition: all 0.6 ease;
-}
+} */
 
 /* #endregion Button Styles */
 
 /* #region Button 2 */
 
 a.animated-button.selected {
-	background: #D24D57;
+	/* background: rgb(218, 218, 218); */
+	background: slategray;
 }
 
 a.animated-button.unselected {
@@ -92,12 +93,14 @@ a.animated-button.unselected {
 }
 
 a.animated-button.button-two {
-	border: 1.5px solid #D24D57;
+	/* border: 1.5px solid rgb(159, 231, 76); */
+	border: 1.5px solid slategray;
 	border-radius: 5px;
 }
 
 a.animated-button.button-two:after {
-	background: #D24D57;
+	/* background: rgb(159, 231, 76); */
+	background: slategray;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
