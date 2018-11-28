@@ -81,7 +81,7 @@ a.animated-button:visited {
 
 a.animated-button.selected {
 	/* background: rgb(218, 218, 218); */
-	background: slategray;
+	background: #8eb9eb;
 }
 
 a.animated-button.unselected {
@@ -94,13 +94,13 @@ a.animated-button.unselected {
 
 a.animated-button.button-two {
 	/* border: 1.5px solid rgb(159, 231, 76); */
-	border: 1.5px solid slategray;
+	border: 1.5px solid #8eb9eb;
 	border-radius: 5px;
 }
 
 a.animated-button.button-two:after {
 	/* background: rgb(159, 231, 76); */
-	background: slategray;
+	background: #8eb9eb;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
